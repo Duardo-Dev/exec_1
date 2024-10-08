@@ -43,10 +43,11 @@ function cadastrar(){
 }
 
 function renderProdutos(){
+    // Limpa tables duplicadas
     document.getElementById("ab").innerHTML = ``;
-   
+    // criar uma novo array, com os valores dos objetos, e joga dentro de uma arrow function
     a.map((item)=>{
-
+         // pega o id da table, e adiciona um novo html dentro dele.
         document.getElementById("ab").innerHTML += `
 
 <tr id="linha-${item.id}">
