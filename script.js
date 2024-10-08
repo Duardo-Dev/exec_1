@@ -21,22 +21,24 @@ function validar(){
 
 }
 
-
+// Função cadastrar os valores na table
 function cadastrar(){
-    let table = document.getElementsByClassName('text-area')
     // alert(`o valor digitado foi ${nome.value}`)
+    
     event.preventDefault();
    
-    
+    // empurra um novo objeto dentro desse array
     a.push({
+        // e pega os valores pegos no escopo global dos inputs
         id: id,
         nome: nomedados.value,
         valor: valordados.value,
         quantidade: quantidadedados.value,
         imagem: imagemdados.value,
     })
-    
+    // a cada produto criado novo, um id sobe um numero
     id++;
+    // e aqui aparece o funcao de aparece as tables
     renderProdutos();
 }
 
