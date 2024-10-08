@@ -3,15 +3,17 @@ let nomedados = document.getElementById('nome')
 let valordados = document.getElementById('valor')
 let quantidadedados = document.getElementById('quantidade')
 let imagemdados = document.getElementById('imagem')
-
+// cria uma novo array
 let a = []
 id = 0;
-
+// cria uma função para validar os inputs
 function validar(){
-    
+    // verifica se o input está vazio
     if (nome.value.length !== 0) {
+        // e se tiver, ele colocar uma borda verde
         nome.classList.remove('is-invalid');
         nome.classList.add('is-valid');
+        // se não, ele coloca uma borda vermelha
     } else {
         nome.classList.remove('is-valid');
         nome.classList.add('is-invalid');
